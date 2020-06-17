@@ -2,8 +2,8 @@
 
 Entre no shell python dentro da pasta do seu projeto e adicione as variáveis de ambiente:
 ```sh
-$ export MONGO_URI="SUA_URI"
-$ export MONGO_DBNAME="SEU_DB_NAME"
+$ export MONGO_URI="mongodb+srv://teste:N5LY4U9MC1ht8RQ2@clusterrest-zfaxv.mongodb.net/REST_MONGO?retryWrites=true&w=majority"
+$ export MONGO_DBNAME="REST_MONGO"
 ```
 Em seguida instale os requirements:
 ```sh
