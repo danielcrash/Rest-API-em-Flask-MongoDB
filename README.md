@@ -18,7 +18,7 @@ Use o Postman com a url (http://localhost:5000), com os endpoints para fazer a c
 ### Endpoints
 - GET /users - endpoint para obter todos os usuários
 
-- GET /contact/:name - endpoints para obter um usuário
+- GET /users/:name - endpoints para obter um usuário
 
 - POST /users -  endpoint para adicionar um novo usuário
 
