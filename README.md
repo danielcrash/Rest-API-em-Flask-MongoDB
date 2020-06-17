@@ -16,13 +16,13 @@ $ python app.py
 Use o Postman com a url (http://localhost:5000), com os endpoints para fazer a chamada na API
 
 ### Endpoints
-- GET /users - ndpoiny para obter todos os usuários
+- GET /users - endpoint para obter todos os usuários
 
-- GET /contact/:name - endpoiny para obter um usuário
+- GET /contact/:name - endpoints para obter um usuário
 
-- POST /users -  endpoiny para adicionar um novo usuário
+- POST /users -  endpoint para adicionar um novo usuário
 
-- DELETE /users/:name - endpoiny para deletar pelo nome
+- DELETE /users/:name - endpoint para deletar pelo nome
 
 ### Construído com
 
