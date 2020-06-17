@@ -19,7 +19,7 @@ Use o Postman com a url (http://localhost:5000), com os endpoints para fazer a c
 
 - DELETE /users/:name - endpoint para deletar pelo nome
 
-O banco foi feito em um Cluster no (https://www.mongodb.com/cloud) para fins de teste. 
+O banco foi feito em um Cluster no [MongoDB Clound](https://www.mongodb.com/cloud) para fins de teste. 
 
 ### Construído com
 
