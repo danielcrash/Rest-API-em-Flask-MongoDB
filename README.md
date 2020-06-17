@@ -1,11 +1,6 @@
 # Rest API em Flask & MongoDB
 
-Entre no shell python dentro da pasta do seu projeto e adicione as variáveis de ambiente:
-```sh
-$ MONGO_URI="mongodb+srv://teste:N5LY4U9MC1ht8RQ2@clusterrest-zfaxv.mongodb.net/REST_MONGO?retryWrites=true&w=majority"
-$ MONGO_DBNAME="REST_MONGO"
-```
-Em seguida instale os requirements:
+Instale os requirements:
 ```sh
 $ pip install -r requirements.txt
 ```
