@@ -1,13 +1,13 @@
 from flask import Flask, request, jsonify
 from flask_restful import Api
 from flask_pymongo import PyMongo
-from settings.settings import MONGO_URI, MONGO_DBNAME
 
 app = Flask(__name__)
 api = Api(app)
 
-app.config['MONGO_DBNAME'] = MONGO_DBNAME
-app.config['MONGO_URI'] = MONGO_URI
+app.config['MONGO_DBNAME'] = "REST_MONGO"
+app.config['MONGO_URI'] = "mongodb+srv://teste:N5LY4U9MC1ht8RQ2@clusterrest-zfaxv.mongodb.net/REST_MONGO?retryWrites" \
+                          "=true&w=majority "
 
 mongo = PyMongo(app)
 
