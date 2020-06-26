@@ -1,13 +1,16 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, Response
 from flask_restful import Api
 from flask_pymongo import PyMongo
+from helper.metrics import setup_metrics
+import prometheus_client
+CONTENT_TYPE_LATEST = str('text/plain; version=0.0.4; charset=utf-8')
 
 app = Flask(__name__)
 api = Api(app)
+setup_metrics(app)
 
 app.config['MONGO_DBNAME'] = "REST_MONGO"
-app.config['MONGO_URI'] = "mongodb+srv://teste:N5LY4U9MC1ht8RQ2@clusterrest-zfaxv.mongodb.net/REST_MONGO?retryWrites" \
-                          "=true&w=majority "
+app.config['MONGO_URI'] = "mongodb+srv://teste:GFCJk0wprly7qu4G@clusterrest-zfaxv.mongodb.net/<dbname>?retryWrites=true&w=majority"
 
 mongo = PyMongo(app)
 
@@ -67,6 +70,11 @@ def delete_user(name):
     else:
         output = 'User not Found.'
         return jsonify({'result': output})
+
+
+@app.route('/metrics')
+def metrics():
+    return Response(prometheus_client.generate_latest(), mimetype=CONTENT_TYPE_LATEST)
 
 
 if __name__ == '__main__':
