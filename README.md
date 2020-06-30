@@ -1,4 +1,4 @@
-# Rest API em Flask & MongoDB
+# Rest API em Flask & MongoDB com teste de Metrícas Prometheus (Counter & Histogram)
 
 Instale os requirements:
 ```sh
